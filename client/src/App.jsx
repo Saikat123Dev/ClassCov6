@@ -9,6 +9,7 @@ import NoteSection from './components/Notes';
 import QuizSection from './StudentDashboard/QuizSection';
 import Assignments from './StudentDashboard/Assignment';
 import AssignmentUpload from './TeacherComponents/AssignmentUpload';
+import QR from './TeacherComponents/QRCodeGenerator';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
       <Route path="/Teach" element={<Teacher/>} />
       <Route path="/uploadAssign" element={<AssignmentUpload/>}/>
+      <Route path="/QRCodegenerator" element={<QR/>}/>
       <Route/>
         <Route path="/" element={<Component/>}/>
         <Route path="/Stud" element={<Student/>} />

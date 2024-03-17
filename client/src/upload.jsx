@@ -2,8 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 import Input from "./components/Input";
 import Button from "./components/Button";
-
+import {useNavigate} from "react-router-dom"
 export default function Component() {
+  const navigate = useNavigate()
   const [studentFullname, setStudentFullname] = useState("");
   const [studentEmail, setStudentEmail] = useState("");
   const [studentId, setStudentId] = useState("");
@@ -36,6 +37,7 @@ export default function Component() {
           instituteName: studentInst,
         }
       );
+      navigate('Stud');
       console.log("Student registration successful", response.data);
     } catch (error) {
       console.error("Student registration error: ", error);
@@ -58,6 +60,7 @@ export default function Component() {
           instituteName: teacherInst,
         }
       );
+      navigate('Teach')
       console.log("Teacher registration successful", response.data);
     } catch (error) {
       console.error("Teacher registration error: ", error);
