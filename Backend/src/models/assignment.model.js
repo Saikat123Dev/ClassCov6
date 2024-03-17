@@ -21,7 +21,6 @@ const assignmentSchema = new Schema(
     teacherName: {
       type:Schema.Types.ObjectId,
       ref: "Teacher",
-      required: true,
     },
     guidelines: {
       type: String,

@@ -34,12 +34,12 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                 </a>
             </li>
             <li className='sidebar-list-item flex flex-row'>
-                <a href="quizz">
+                <a href="quiz">
                     <BsPeopleFill className='icon'/>Attempt Quiz
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
+                <a href="assignment">
                     <BsListCheck className='icon'/> Assignment
                 </a>
             </li>

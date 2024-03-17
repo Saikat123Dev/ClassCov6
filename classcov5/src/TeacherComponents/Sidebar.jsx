@@ -26,6 +26,11 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                     <BsFillGrid3X3GapFill className='icon'/> Upload Quiz
                 </a>
             </li>
+            <li className='sidebar-list-item'>
+                <a href="uploadAssign">
+                    <BsFillGrid3X3GapFill className='icon'/> Upload Assignments
+                </a>
+            </li>
             <li className='sidebar-list-item flex flex-row'>
                 <a href="">
                     <BsPeopleFill className='icon'/> Manage Students
