@@ -23,6 +23,7 @@ export default function Component() {
   const createStudent = async (event) => {
     event.preventDefault();
     setStudentError("");
+    //hi api
     try {
       const response = await axios.post(
         `http://localhost:8000/api/v1/students/register`,
